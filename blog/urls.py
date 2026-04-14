@@ -7,4 +7,6 @@ urlpatterns = [
     path('create/', ArticleCreateView.as_view(), name='create'),
     path('update/<int:pk>/', ArticleUpdateView.as_view(), name='update'),
     path('delete/<int:pk>/', ArticleDeleteView.as_view(), name='delete'),
+     # 🔍 recherche
+    path('search/', search, name='search'),
 ]
